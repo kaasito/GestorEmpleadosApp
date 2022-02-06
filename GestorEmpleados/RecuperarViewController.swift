@@ -48,6 +48,24 @@ class RecuperarViewController: UIViewController {
                     self.present(alert, animated: true, completion: nil)
                 }
                 
+                if response.value?.status == 401{
+                    let alert = UIAlertController(title: "Api Token no válido", message: "Contraseña no cambiada", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Genial", style: .default, handler: { action in
+                        switch action.style{
+                        case .default:
+                            print("default")
+                            
+                        case .cancel:
+                            print("cancel")
+                            
+                        case .destructive:
+                            print("destructive")
+                            
+                        }
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                }
+                
                 if response.value?.status == 0{
                     let alert = UIAlertController(title: "No se ha podido cambiar la contraseña", message: "Algo ha salido mal", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Vale", style: .destructive, handler: { action in
@@ -67,9 +85,11 @@ class RecuperarViewController: UIViewController {
                 }
                 
             }
-        }else{
+        }
+       
+        if(correo == ""){
             //toast
-            let alert = UIAlertController(title: "No se ha hecho LogIn", message: "El usuario existe", preferredStyle: .alert)
+            let alert = UIAlertController(title: "No se ha editado la contraseña", message: "Tienes que introducir algún email", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Vale", style: .destructive, handler: { action in
                 switch action.style{
                 case .default:
@@ -85,6 +105,29 @@ class RecuperarViewController: UIViewController {
             }))
             self.present(alert, animated: true, completion: nil)
         }
+        
+        
+        if(correo != correoreal){
+            //toast
+            let alert = UIAlertController(title: "No se ha editado la contraseña", message: "El email introducido no coincide con el tuyo", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Vale", style: .destructive, handler: { action in
+                switch action.style{
+                case .default:
+                    print("default")
+                    
+                case .cancel:
+                    print("cancel")
+                    
+                case .destructive:
+                    print("destructive")
+                    
+                }
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+       
+        
+        
         
         
         

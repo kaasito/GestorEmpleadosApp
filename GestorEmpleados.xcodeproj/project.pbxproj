@@ -11,6 +11,7 @@
 		6B5D89EC27AC43B200D71869 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D89EB27AC43B100D71869 /* InfoViewController.swift */; };
 		6B5D89EE27AD1BA400D71869 /* MiPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D89ED27AD1BA400D71869 /* MiPerfilViewController.swift */; };
 		6B5D89F027AD406F00D71869 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D89EF27AD406F00D71869 /* File.swift */; };
+		6B5D89F227AEEF3B00D71869 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D89F127AEEF3B00D71869 /* EditViewController.swift */; };
 		6B828FE6279FF68F00D06D60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B828FE5279FF68F00D06D60 /* AppDelegate.swift */; };
 		6B828FE8279FF68F00D06D60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B828FE7279FF68F00D06D60 /* SceneDelegate.swift */; };
 		6B828FEA279FF68F00D06D60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B828FE9279FF68F00D06D60 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		6B5D89EB27AC43B100D71869 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		6B5D89ED27AD1BA400D71869 /* MiPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiPerfilViewController.swift; sourceTree = "<group>"; };
 		6B5D89EF27AD406F00D71869 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		6B5D89F127AEEF3B00D71869 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		6B828FE2279FF68F00D06D60 /* GestorEmpleados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestorEmpleados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B828FE5279FF68F00D06D60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B828FE7279FF68F00D06D60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				6B5D89EB27AC43B100D71869 /* InfoViewController.swift */,
 				6B5D89ED27AD1BA400D71869 /* MiPerfilViewController.swift */,
 				6B5D89EF27AD406F00D71869 /* File.swift */,
+				6B5D89F127AEEF3B00D71869 /* EditViewController.swift */,
 			);
 			path = GestorEmpleados;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B5D89F227AEEF3B00D71869 /* EditViewController.swift in Sources */,
 				6B98732A27A4179A00EA28A2 /* EmpleadoTableViewCell.swift in Sources */,
 				6B5D89F027AD406F00D71869 /* File.swift in Sources */,
 				6B95EC2727A00BB400EFE70C /* LoginViewController.swift in Sources */,

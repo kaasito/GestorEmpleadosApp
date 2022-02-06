@@ -10,8 +10,9 @@ import UIKit
 class MiPerfilViewController: UIViewController {
 
     
-    @IBOutlet weak var salarylable: UILabel!
+    
     @IBOutlet weak var baiografi: UILabel!
+    @IBOutlet weak var salarylable: UILabel!
     @IBOutlet weak var puesstolabel: UILabel!
     @IBOutlet weak var correo: UILabel!
     @IBOutlet weak var name: UILabel!
@@ -30,11 +31,12 @@ class MiPerfilViewController: UIViewController {
         puestopropio = defaults.string(forKey: "rol")!
         salariopropio = defaults.string(forKey: "salario")!
         
-        salarylable.text = salariopropio
-        baiografi.text = biopropia
-        puesstolabel.text = puestopropio
-        correo.text = correopropio
-        name.text = namepropio
+        salarylable.attributedText = NSMutableAttributedString().bold("Tu salario: ").normal(salariopropio)
+        baiografi.attributedText = NSMutableAttributedString().bold("Tu salario: ").normal(biopropia)
+        puesstolabel.attributedText = NSMutableAttributedString().bold("Tu puesto: ").normal(puestopropio)
+        correo.attributedText = NSMutableAttributedString().bold("Tu E-mail: ").normal(correopropio)
+        name.attributedText = NSMutableAttributedString().bold("Tu nombre: ").normal(namepropio)
+        
         
         /*
          

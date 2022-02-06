@@ -19,13 +19,14 @@ class LoginViewController: UIViewController {
     var correo: String = ""
     let defaults = UserDefaults.standard
     @IBOutlet weak var passs: UITextField!
+    
     @IBOutlet weak var nickname: UITextField!
     @IBOutlet weak var logearseBoton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        logearseBoton.layer.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        logearseBoton.layer.backgroundColor = #colorLiteral(red: 1, green: 0.4941176471, blue: 0.4745098039, alpha: 1)
         logearseBoton.layer.cornerRadius = 10
 
 
@@ -46,7 +47,6 @@ class LoginViewController: UIViewController {
         AF.request(url, method: .post, parameters: json as Parameters, encoding: JSONEncoding.default, headers: nil).responseDecodable(of: Response.self){ [self]
             response in
             
-            print(response.value?.token)
             if((response.value?.token) != nil){
                 self.token = response.value!.token!
                 self.empleo = response.value!.puesto!
@@ -61,7 +61,7 @@ class LoginViewController: UIViewController {
                 defaults.set(salary, forKey: "salario")
                 performSegue(withIdentifier: "fromLogin", sender: nil)
             }else{
-                let alert = UIAlertController(title: "No se ha hecho LogIn", message: "El usuario existe", preferredStyle: .alert)
+                let alert = UIAlertController(title: "No se ha hecho LogIn", message: "Ha habido algún problema", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Vale", style: .destructive, handler: { action in
                     switch action.style{
                         case .default:

@@ -23,7 +23,7 @@ class EmpleadosTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        self.tabla.reloadData()
         self.tabla.delegate = self
         self.tabla.dataSource = self
         let defaults = UserDefaults.standard
