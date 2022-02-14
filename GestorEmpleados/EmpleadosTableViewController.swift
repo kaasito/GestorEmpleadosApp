@@ -13,16 +13,10 @@ class EmpleadosTableViewController: UITableViewController {
     
     @IBOutlet var tabla: UITableView!
     var empleados: [User]?
-    var nombreArray: [String] = []
-    var salarioArray: [Double] = []
-    var puestoArray: [String] = []
-    var emailArray: [String] = []
-    var bioArray: [String] = []
     var token: String = ""
     var empleo: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.tabla.reloadData()
         self.tabla.delegate = self
         self.tabla.dataSource = self
@@ -50,49 +44,47 @@ class EmpleadosTableViewController: UITableViewController {
         }else{
             NetWorkingProvider.shared.getUser(api_token: token) { arrayUsuarios in
                 self.empleados = arrayUsuarios
-                for i in arrayUsuarios{
-                    self.nombreArray.append(i.name!)
-                    self.salarioArray.append(i.salario!)
-                    self.puestoArray.append(i.puesto!)
-                    self.emailArray.append(i.email!)
-                    self.bioArray.append(i.biografia!)
-                    self.tabla.reloadData()
-                }
+              
+                
             } failure: { error in
                 print(error)
             }
         }
     }
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            tabla.reloadData()
+        }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.nombreArray.count
+        return empleados?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! EmpleadoTableViewCell
          
-        cell.nombreLabel.text = self.nombreArray[indexPath.row]
-        cell.puestoLabel.text = self.puestoArray[indexPath.row]
-        cell.emailLabel.text = self.emailArray[indexPath.row]
-        cell.salarioLabel.text = String(self.salarioArray[indexPath.row])
-        cell.biografiaLabel.text = self.bioArray[indexPath.row]
-         
-         
+            cell.user = empleados?[indexPath.row]
+        
            return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(identifier: "InfoViewController") as? InfoViewController {
-            vc.name = nombreArray[indexPath.row]
-            vc.empleo = puestoArray[indexPath.row]
-            vc.e_mail = emailArray[indexPath.row]
-            vc.salary = salarioArray[indexPath.row]
-            vc.bio = bioArray[indexPath.row]
+            var user = empleados?[indexPath.row]
+           
+            vc.name = (user?.name)!
+            vc.empleo = (user?.puesto)!
+            vc.e_mail = (user?.email)!
+            vc.salary = (user?.salario)!
+            vc.bio = (user?.biografia)!
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     
     
+  
    
 
 }

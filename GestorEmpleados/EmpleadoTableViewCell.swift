@@ -9,6 +9,11 @@ import UIKit
 
 class EmpleadoTableViewCell: UITableViewCell {
 
+    var user: User? {
+        didSet {
+            renderUI()
+        }
+    }
     
     @IBOutlet weak var biografiaLabel: UILabel!
     @IBOutlet weak var salarioLabel: UILabel!
@@ -26,4 +31,13 @@ class EmpleadoTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    private func renderUI() {
+        guard let user = user else { return }
+        
+        nombreLabel.text = user.name
+        puestoLabel.text = user.puesto
+        emailLabel.text = user.email
+        salarioLabel.text = String(user.salario!)
+        biografiaLabel.text = user.biografia
+    }
 }

@@ -12,12 +12,6 @@ final class NetWorkingProvider{
     var elid: Int?
     static let shared = NetWorkingProvider()
     
-    
-    
-    
-    
-    
-    
     func getUser(api_token: String, success: @escaping (_ users: [User]) ->(), failure: @escaping (_ error: String) -> ()){
         let url = "http://localhost:8888/gestor-empleados/public/api/user/verPerfil"
         
@@ -29,9 +23,7 @@ final class NetWorkingProvider{
             if let users = response.value?.user {
                 success(users)
                 for user in users {
-                   
                     print(user.name)
-                    
                 }
             }else{
                 print("sisiisi")

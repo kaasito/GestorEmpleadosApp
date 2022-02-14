@@ -22,7 +22,7 @@ class InfoViewController: UIViewController {
     var name:String = ""
     var e_mail:String = ""
     var empleo:String = ""
-    var salary:Double = 0
+    var salary:Int = 0
     var bio:String = ""
     
     override func viewDidLoad() {

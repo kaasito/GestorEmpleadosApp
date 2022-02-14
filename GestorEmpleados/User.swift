@@ -9,7 +9,7 @@ struct User: Decodable, Encodable {
     var name: String?
     var puesto: String?
     var email: String?
-    var salario: Double?
+    var salario: Int?
     var biografia: String?
     var api_token: String?
 }

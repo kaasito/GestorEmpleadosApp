@@ -20,7 +20,7 @@ class EditViewController: UIViewController {
     var nombreEditar = ""
     var e_mailEditar = ""
     var empleoEditar = ""
-    var salaryEditar:Double = 0
+    var salaryEditar:Int = 0
     var bioEditar = ""
     override func viewDidLoad() {
         super.viewDidLoad()
