@@ -3,18 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B1970E127EE7FEC00DBBEEB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6B1970E027EE7FEC00DBBEEB /* Alamofire */; };
 		6B5D89EA27AC08EC00D71869 /* RecuperarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D89E927AC08EC00D71869 /* RecuperarViewController.swift */; };
 		6B5D89EC27AC43B200D71869 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D89EB27AC43B100D71869 /* InfoViewController.swift */; };
 		6B5D89EE27AD1BA400D71869 /* MiPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D89ED27AD1BA400D71869 /* MiPerfilViewController.swift */; };
 		6B5D89F027AD406F00D71869 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D89EF27AD406F00D71869 /* File.swift */; };
 		6B5D89F227AEEF3B00D71869 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D89F127AEEF3B00D71869 /* EditViewController.swift */; };
+		6B73962727F2743A008F7DF6 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B73962627F2743A008F7DF6 /* Responses.swift */; };
 		6B828FE6279FF68F00D06D60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B828FE5279FF68F00D06D60 /* AppDelegate.swift */; };
 		6B828FE8279FF68F00D06D60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B828FE7279FF68F00D06D60 /* SceneDelegate.swift */; };
-		6B828FEA279FF68F00D06D60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B828FE9279FF68F00D06D60 /* ViewController.swift */; };
+		6B828FEA279FF68F00D06D60 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B828FE9279FF68F00D06D60 /* RegisterViewController.swift */; };
 		6B828FED279FF68F00D06D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B828FEB279FF68F00D06D60 /* Main.storyboard */; };
 		6B828FEF279FF69100D06D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B828FEE279FF69100D06D60 /* Assets.xcassets */; };
 		6B828FF2279FF69100D06D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B828FF0279FF69100D06D60 /* LaunchScreen.storyboard */; };
@@ -23,7 +25,6 @@
 		6B98732527A3FC1900EA28A2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98732427A3FC1900EA28A2 /* User.swift */; };
 		6B98732727A4083500EA28A2 /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98732627A4083500EA28A2 /* NetworkingProvider.swift */; };
 		6B98732A27A4179A00EA28A2 /* EmpleadoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B98732927A4179A00EA28A2 /* EmpleadoTableViewCell.swift */; };
-		8A7FD33DB8C0954DF61912B4 /* Pods_GestorEmpleados.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AB68A991CE08D591FB4B19 /* Pods_GestorEmpleados.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +33,11 @@
 		6B5D89ED27AD1BA400D71869 /* MiPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiPerfilViewController.swift; sourceTree = "<group>"; };
 		6B5D89EF27AD406F00D71869 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		6B5D89F127AEEF3B00D71869 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		6B73962627F2743A008F7DF6 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		6B828FE2279FF68F00D06D60 /* GestorEmpleados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestorEmpleados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B828FE5279FF68F00D06D60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B828FE7279FF68F00D06D60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6B828FE9279FF68F00D06D60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6B828FE9279FF68F00D06D60 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6B828FEC279FF68F00D06D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B828FEE279FF69100D06D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B828FF1279FF69100D06D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,9 +47,6 @@
 		6B98732427A3FC1900EA28A2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6B98732627A4083500EA28A2 /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
 		6B98732927A4179A00EA28A2 /* EmpleadoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmpleadoTableViewCell.swift; sourceTree = "<group>"; };
-		A3AB68A991CE08D591FB4B19 /* Pods_GestorEmpleados.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GestorEmpleados.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B31C114C3F77F767EC8A2A73 /* Pods-GestorEmpleados.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestorEmpleados.release.xcconfig"; path = "Target Support Files/Pods-GestorEmpleados/Pods-GestorEmpleados.release.xcconfig"; sourceTree = "<group>"; };
-		F8390131EF1A488E265BD51D /* Pods-GestorEmpleados.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestorEmpleados.debug.xcconfig"; path = "Target Support Files/Pods-GestorEmpleados/Pods-GestorEmpleados.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,29 +54,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A7FD33DB8C0954DF61912B4 /* Pods_GestorEmpleados.framework in Frameworks */,
+				6B1970E127EE7FEC00DBBEEB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		084C4AABA1D426F4770AB645 /* Frameworks */ = {
+		6B1970E227EE824300DBBEEB /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				A3AB68A991CE08D591FB4B19 /* Pods_GestorEmpleados.framework */,
+				6B828FE9279FF68F00D06D60 /* RegisterViewController.swift */,
 			);
-			name = Frameworks;
+			path = Register;
+			sourceTree = "<group>";
+		};
+		6B1970E327EE826000DBBEEB /* List */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D89EB27AC43B100D71869 /* InfoViewController.swift */,
+				6B5D89F127AEEF3B00D71869 /* EditViewController.swift */,
+				6B98732927A4179A00EA28A2 /* EmpleadoTableViewCell.swift */,
+				6B98732227A17A6500EA28A2 /* EmpleadosTableViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		6B1970E427EE827600DBBEEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D89EF27AD406F00D71869 /* File.swift */,
+				6B98732427A3FC1900EA28A2 /* User.swift */,
+				6B73962627F2743A008F7DF6 /* Responses.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B1970E527EE828C00DBBEEB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6B95EC2627A00BB400EFE70C /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6B1970E627EE82A300DBBEEB /* RecoverPassword */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D89E927AC08EC00D71869 /* RecuperarViewController.swift */,
+			);
+			path = RecoverPassword;
+			sourceTree = "<group>";
+		};
+		6B1970E727EE82D700DBBEEB /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D89ED27AD1BA400D71869 /* MiPerfilViewController.swift */,
+			);
+			path = MyProfile;
 			sourceTree = "<group>";
 		};
 		6B828FD9279FF68F00D06D60 = {
 			isa = PBXGroup;
 			children = (
-				6B98732827A40BCF00EA28A2 /* Network */,
 				6B828FE4279FF68F00D06D60 /* GestorEmpleados */,
 				6B828FE3279FF68F00D06D60 /* Products */,
-				A59556BDE75DCC2BBBC1F6BB /* Pods */,
-				084C4AABA1D426F4770AB645 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,22 +133,19 @@
 		6B828FE4279FF68F00D06D60 /* GestorEmpleados */ = {
 			isa = PBXGroup;
 			children = (
+				6B1970E727EE82D700DBBEEB /* MyProfile */,
+				6B1970E627EE82A300DBBEEB /* RecoverPassword */,
+				6B1970E527EE828C00DBBEEB /* Login */,
+				6B1970E427EE827600DBBEEB /* Model */,
+				6B1970E327EE826000DBBEEB /* List */,
+				6B1970E227EE824300DBBEEB /* Register */,
+				6B98732827A40BCF00EA28A2 /* Network */,
 				6B828FE5279FF68F00D06D60 /* AppDelegate.swift */,
 				6B828FE7279FF68F00D06D60 /* SceneDelegate.swift */,
-				6B828FE9279FF68F00D06D60 /* ViewController.swift */,
 				6B828FEB279FF68F00D06D60 /* Main.storyboard */,
 				6B828FEE279FF69100D06D60 /* Assets.xcassets */,
-				6B98732927A4179A00EA28A2 /* EmpleadoTableViewCell.swift */,
 				6B828FF0279FF69100D06D60 /* LaunchScreen.storyboard */,
 				6B828FF3279FF69100D06D60 /* Info.plist */,
-				6B95EC2627A00BB400EFE70C /* LoginViewController.swift */,
-				6B98732227A17A6500EA28A2 /* EmpleadosTableViewController.swift */,
-				6B98732427A3FC1900EA28A2 /* User.swift */,
-				6B5D89E927AC08EC00D71869 /* RecuperarViewController.swift */,
-				6B5D89EB27AC43B100D71869 /* InfoViewController.swift */,
-				6B5D89ED27AD1BA400D71869 /* MiPerfilViewController.swift */,
-				6B5D89EF27AD406F00D71869 /* File.swift */,
-				6B5D89F127AEEF3B00D71869 /* EditViewController.swift */,
 			);
 			path = GestorEmpleados;
 			sourceTree = "<group>";
@@ -120,15 +158,6 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		A59556BDE75DCC2BBBC1F6BB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F8390131EF1A488E265BD51D /* Pods-GestorEmpleados.debug.xcconfig */,
-				B31C114C3F77F767EC8A2A73 /* Pods-GestorEmpleados.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,17 +165,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B828FF6279FF69100D06D60 /* Build configuration list for PBXNativeTarget "GestorEmpleados" */;
 			buildPhases = (
-				70F3C696FC2C42878398FAF8 /* [CP] Check Pods Manifest.lock */,
 				6B828FDE279FF68F00D06D60 /* Sources */,
 				6B828FDF279FF68F00D06D60 /* Frameworks */,
 				6B828FE0279FF68F00D06D60 /* Resources */,
-				21C1A80892C6E2FE71371DA9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GestorEmpleados;
+			packageProductDependencies = (
+				6B1970E027EE7FEC00DBBEEB /* Alamofire */,
+			);
 			productName = GestorEmpleados;
 			productReference = 6B828FE2279FF68F00D06D60 /* GestorEmpleados.app */;
 			productType = "com.apple.product-type.application";
@@ -174,6 +204,9 @@
 				Base,
 			);
 			mainGroup = 6B828FD9279FF68F00D06D60;
+			packageReferences = (
+				6B1970DF27EE7FEC00DBBEEB /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 6B828FE3279FF68F00D06D60 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -196,48 +229,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		21C1A80892C6E2FE71371DA9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GestorEmpleados/Pods-GestorEmpleados-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GestorEmpleados/Pods-GestorEmpleados-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GestorEmpleados/Pods-GestorEmpleados-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		70F3C696FC2C42878398FAF8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GestorEmpleados-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		6B828FDE279FF68F00D06D60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -247,7 +238,7 @@
 				6B98732A27A4179A00EA28A2 /* EmpleadoTableViewCell.swift in Sources */,
 				6B5D89F027AD406F00D71869 /* File.swift in Sources */,
 				6B95EC2727A00BB400EFE70C /* LoginViewController.swift in Sources */,
-				6B828FEA279FF68F00D06D60 /* ViewController.swift in Sources */,
+				6B828FEA279FF68F00D06D60 /* RegisterViewController.swift in Sources */,
 				6B828FE6279FF68F00D06D60 /* AppDelegate.swift in Sources */,
 				6B5D89EC27AC43B200D71869 /* InfoViewController.swift in Sources */,
 				6B5D89EE27AD1BA400D71869 /* MiPerfilViewController.swift in Sources */,
@@ -255,6 +246,7 @@
 				6B98732527A3FC1900EA28A2 /* User.swift in Sources */,
 				6B828FE8279FF68F00D06D60 /* SceneDelegate.swift in Sources */,
 				6B98732327A17A6500EA28A2 /* EmpleadosTableViewController.swift in Sources */,
+				6B73962727F2743A008F7DF6 /* Responses.swift in Sources */,
 				6B98732727A4083500EA28A2 /* NetworkingProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,7 +391,6 @@
 		};
 		6B828FF7279FF69100D06D60 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8390131EF1A488E265BD51D /* Pods-GestorEmpleados.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -419,7 +410,6 @@
 		};
 		6B828FF8279FF69100D06D60 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B31C114C3F77F767EC8A2A73 /* Pods-GestorEmpleados.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +449,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B1970DF27EE7FEC00DBBEEB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B1970E027EE7FEC00DBBEEB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B1970DF27EE7FEC00DBBEEB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6B828FDA279FF68F00D06D60 /* Project object */;
 }
